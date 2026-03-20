@@ -27,18 +27,27 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.15'
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
 
-#      - uses: actions/cache@v4
-#        with:
-#          path: /tmp/hugo_cache_runner/
-#          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
-#          restore-keys: |
-#            ${{ runner.os }}-hugomod-
+      - name: Debug - Show module info
+        run: |
+          echo "=== go.mod ==="
+          cat go.mod
+          echo ""
+          echo "=== go.sum ==="
+          cat go.sum || echo "no go.sum"
+          echo ""
+          echo "=== Hugo modules ==="
+          hugo mod graph
 
       - name: Setup Pages
         id: pages
@@ -48,7 +57,6 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
         run: |
-          echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
