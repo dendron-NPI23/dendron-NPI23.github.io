@@ -8,8 +8,8 @@ sections:
   - block: slider
     content:
       slides:
-      - title: 👋 Welcome to the group
-        content: Take a look at what we're working on...
+      - title: Добро пожаловать!
+        content: Чем же мы сейчас занимаемся...
         align: center
         background:
           image:
@@ -18,8 +18,8 @@ sections:
               brightness: 0.7
           position: right
           color: '#666'
-      - title: Lunch & Learn ☕️
-        content: 'Share your knowledge with the group and explore exciting new topics together!'
+      - title: Этап выбора темы проекта закончен. Наша тема — рост дендритов
+        content: Давайте будем изучать это вместе!
         align: left
         background:
           image:
@@ -28,8 +28,8 @@ sections:
               brightness: 0.7
           position: center
           color: '#555'
-      - title: World-Class Semiconductor Lab
-        content: 'Just opened last month!'
+      - title: Этап первый
+        content: Уже завершён!
         align: right
         background:
           image:
@@ -41,8 +41,8 @@ sections:
         link:
           icon: graduation-cap
           icon_pack: fas
-          text: Join Us
-          url: ../contact/
+          text: Прочтите!
+          url: ../post/20-12-01-wowchemy-prize/
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: ''
