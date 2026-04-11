@@ -42,7 +42,22 @@ sections:
           icon: graduation-cap
           icon_pack: fas
           text: Прочтите!
-          url: ../post/20-12-01-wowchemy-prize/
+          url: ../post/step1/
+      - title: Этап второй
+        content: Уже завершён!
+        align: right
+        background:
+          image:
+            filename: step2.jpg
+            filters:
+              brightness: 0.5
+          position: center
+          color: '#333'
+        link:
+          icon: graduation-cap
+          icon_pack: fas
+          text: Прочтите!
+          url: ../post/step2/
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: ''
