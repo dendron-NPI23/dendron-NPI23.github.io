@@ -73,6 +73,21 @@ sections:
           icon_pack: fas
           text: Прочтите!
           url: ../post/step3/
+      - title: Этап четвёртый
+        content: Уже завершён!
+        align: right
+        background:
+          image:
+            filename: step3.jpg
+            filters:
+              brightness: 0.5
+          position: center
+          color: '#333'
+        link:
+          icon: graduation-cap
+          icon_pack: fas
+          text: Прочтите!
+          url: ../post/step4/
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: ''
